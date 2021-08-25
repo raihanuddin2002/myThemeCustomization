@@ -7,6 +7,7 @@
        // "editor.background": "#24292E"
        "editor.background": "#171C2A"
     },
+    "workbench.colorTheme": "Andromeda Italic Bordered",
     "terminal.integrated.tabs.enabled": true,
     "terminal.integrated.defaultProfile.windows": "git bash",
     "terminal.integrated.profiles.windows": {
@@ -48,472 +49,272 @@
                         "fontStyle": "italic",
                     }
                 },
-        /*========================================================================================
+            /*========================================================================================
             *                                       HTML
             *=========================================================================================*/
 
             /* ================================
-            *  Tag color
+            * Tag name 
+            * text
             *=================================*/
-            {
-                "scope":[
-                    "entity.name.tag.html"
-                ],
-                "settings": {
-                    "fontStyle": "italic",
-                    // "foreground": "#00E8C6"
-                }
-            },
-            /* ================================
-            *  Text color
-            *=================================*/
-            {
-                "scope":[
-                    "text.html.derivative"
-                ],
-                "settings": {
-                    "fontStyle": "italic",
-                }
-            },
+                {
+                    "scope":[
+                        "entity.name.tag.html",
+                        "entity.name.tag.html",
+                        "text.html.derivative",
+                    ],
+                    "settings": {
+                        "fontStyle": "italic",
+                    }
+                },
             /* ================================
             *  Quote value
             *=================================*/
-            
-            {
-                "scope":[
-                    "string.quoted.double.html"
-                ],
-                "settings": {
-                    "foreground": "#81e975",
-                    "fontStyle": "italic",
-                }
-            },
-            {
-                "scope":[
-                    "string.quoted.single.html"
-                ],
-                "settings": {
-                    "foreground": "#81e975",
-                    "fontStyle": "",
-                }
-            },
-             /* ================================
-            *  Tag name
-            *=================================*/
-            {
-                "scope":[
-                    "entity.name.tag.html"
-                ],
-                "settings": {
-                    "fontStyle": "italic",
-                }
-            },
-             /* ================================
+                {
+                    "scope":[
+                        "string.quoted.double.html",
+                        "string.quoted.single.html"
+                    ],
+                    "settings": {
+                        "foreground": "#81e975",
+                        "fontStyle": "italic",
+                    }
+                },
+                
+            /* ================================
             *  Attribute name
             *=================================*/
-            {
-                "scope":[
-                    "entity.other.attribute-name.html"
-                ],
-                "settings": {
-                    "foreground": "#8BE9FD",
-                    "fontStyle": "italic",
-                }
-            },
-             /* ================================
-            *  Quotation start end
+                {
+                    "scope":[
+                        "entity.other.attribute-name.html"
+                    ],
+                    "settings": {
+                        "foreground": "#8BE9FD",
+                        "fontStyle": "italic",
+                    }
+                },
+            /* ================================
+            *  Quotation start & end
             *=================================*/
-            {
-                "scope":[
-                    "punctuation.definition.string.begin.html"
-                ],
-                "settings": {
-                    "foreground": "#2f52ec",
-                    "fontStyle": "bold italic",
-                }
-            },
-            {
-                "scope":[
-                    "punctuation.definition.string.end.html"
-                ],
-                "settings": {
-                    "foreground": "#2597DA",
-                    "fontStyle": "bold italic",
-                }
-            },
+                {
+                    "scope":[
+                        "punctuation.definition.string.begin.html"
+                    ],
+                    "settings": {
+                        "foreground": "#2f52ec",
+                        "fontStyle": "bold italic",
+                    }
+                },
+                {
+                    "scope":[
+                        "punctuation.definition.string.end.html"
+                    ],
+                    "settings": {
+                        "foreground": "#2597DA",
+                        "fontStyle": "bold italic",
+                    }
+                },
             /* ================================
             *  Tag start and close
             *=================================*/
-            {
-                "scope":[
-                    "punctuation.definition.tag.begin.html"
-                ],
-                "settings": {
-                    "foreground": "#9272ec",
-                    "fontStyle": "italic",
-                }
-            },
-            {
-                "scope":[
-                    "punctuation.definition.tag.end.html"
-                ],
-                "settings": {
-                    "foreground": "#9272ec",
-                    "fontStyle": "italic",
-                }
-            },
+                {
+                    "scope":[
+                        "punctuation.definition.tag.begin.html",
+                        "punctuation.definition.tag.end.html"
+                    ],
+                    "settings": {
+                        "foreground": "#9272ec",
+                        "fontStyle": "italic",
+                    }
+                },
             /*========================================================================================
             *                                       CSS
             *=========================================================================================*/
+            /* =================================================================
+                * Class
+                * Id,
+                * Colors 
+                * url (keyword) 
+                * transform (animation proerty value) 
+                * Punctuation(; :) 
+                * media (keyword)
+             *==================================================================*/
+                {
+                    "scope":[
+                        "entity.name.tag.css",
+                        "constant.numeric.css",
+                        "support.constant.property-value.css",
+                        "constant.other.color.rgb-value.hex.css",
+                        "support.constant.color.w3c-standard-color-name.css",
+                        "support.function.url.css",
+                        "support.function.misc.css",
+                        "support.function.gradient.css",
+                        "support.function.transform.css",
+                        "punctuation.separator.key-value.css",
+                        "punctuation.terminator.rule.css",
+                        "support.constant.media.css"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic",
+                    }
+                },
             /* ================================
-                *  Class and Id
-             *=================================*/
-            {
-                "scope":[
-                    "entity.name.tag.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic",
-                }
-            },
-            {
-                "scope":[
-                    "entity.other.attribute-name.class.css"
-                ],
-                "settings": {
-                    "foreground": "#dba959",
-                    "fontStyle": "italic",
-                }
-            },
-            {
-                "scope":[
-                    "entity.other.attribute-name.id.css"
-                ],
-                "settings": {
-                    "foreground": "#ffcc7b",
-                    "fontStyle": "italic",
-                }
-            },
-            {
-                "scope":[
-                    "constant.numeric.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-             /* ================================
-                * root
-             *=================================*/
-            {
-                "scope":[
-                    "variable.css"
-                ],
-                "settings": {
-                    "foreground": "#81e975",
-                    "fontStyle": "italic"
-                }
-            },
-             /* ================================
-                * Property and value
-             *=================================*/
-            {
-                "scope":[
-                    "support.type.property-name.css"
-                ],
-                "settings": {
-                    "foreground": "#81e975",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope":[
-                    "support.constant.property-value.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            // hex color
-            {
-                "scope":[
-                    "constant.other.color.rgb-value.hex.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            // color name
-            {
-                "scope":[
-                    "support.constant.color.w3c-standard-color-name.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            // Url() -------------
-            {
-                "scope":[
-                    "support.function.url.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            // rgb() -------------
-            {
-                "scope":[
-                    "support.function.misc.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            // gradient() -------------
-            {
-                "scope":[
-                    "support.function.gradient.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
+                * Attribute name (Class,id)
+            *=================================*/
+                {
+                    "scope":[
+                        "entity.other.attribute-name.id.css",
+                        "entity.other.attribute-name.class.css"
+                    ],
+                    "settings": {
+                        "foreground": "#ffcc7b",
+                        "fontStyle": "italic",
+                    }
+                },
+            /* ===========================================
+            * root (keyword), 
+            * root Property and value
+            *=============================================*/
+                {
+                    "scope":[
+                        "variable.css",
+                        "support.type.property-name.css"
+                    ],
+                    "settings": {
+                        "foreground": "#81e975",
+                        "fontStyle": "italic"
+                    }
+                },
+                
             /* ================================
-                *Brackets
-             *=================================*/
-            {
-                "scope":[
-                    "punctuation.section.function.begin.bracket.round.css"
-                ],
-                "settings": {
-                    "foreground": "#fd3f49",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope":[
-                    "punctuation.section.function.end.bracket.round.css"
-                ],
-                "settings": {
-                    "foreground": "#fd3f49",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope":[
-                    "punctuation.section.property-list.begin.bracket.curly.css"
-                ],
-                "settings": {
-                    "foreground": "#fd3f49",
-                    "fontStyle": "italic bold"
-                }
-            },
-            {
-                "scope":[
-                    "punctuation.section.property-list.end.bracket.curly.css"
-                ],
-                "settings": {
-                    "foreground": "#fd3f49",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope":[
-                    "punctuation.definition.entity.begin.bracket.square.css"
-                ],
-                "settings": {
-                    "foreground": "#fd3f49",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope":[
-                    "punctuation.definition.entity.end.bracket.square.css"
-                ],
-                "settings": {
-                    "foreground": "#fd3f49",
-                    "fontStyle": "italic"
-                }
-            },
-             /* ================================
+            * Brackets, 
+            * keyframes brackets
+            *=================================*/
+                {
+                    "scope":[
+                        "punctuation.section.function.begin.bracket.round.css",
+                        "punctuation.section.function.end.bracket.round.css",
+                        "punctuation.section.property-list.begin.bracket.curly.css",
+                        "punctuation.section.property-list.end.bracket.curly.css",
+                        "punctuation.definition.entity.begin.bracket.square.css",
+                        "punctuation.definition.entity.end.bracket.square.css",
+                        "punctuation.section.keyframes.begin.bracket.curly.css",
+                        "punctuation.section.keyframes.end.bracket.curly.css"
+                    ],
+                    "settings": {
+                        "foreground": "#fd3f49",
+                        "fontStyle": "italic"
+                    }
+                },
+            
+            /* ================================
                 * KeyFrames
-             *=================================*/
-              // keyframes bracket
-            {
-                "scope":[
-                    "punctuation.section.keyframes.begin.bracket.curly.css"
-                ],
-                "settings": {
-                    "foreground": "#fd3f49",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope":[
-                    "punctuation.section.keyframes.end.bracket.curly.css"
-                ],
-                "settings": {
-                    "foreground": "#fd3f49",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope":[
-                    "entity.other.keyframe-offset.percentage.css"
-                ],
-                "settings": {
-                    "foreground": "#836fbb",
-                    "fontStyle": "italic"
-                }
-            },
-             /* ================================
-                * Transform
-             *=================================*/
-            {
-                "scope":[
-                    "support.function.transform.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-          
-             /* ================================
+            *=================================*/
+                {
+                    "scope":[
+                        "entity.other.keyframe-offset.percentage.css"
+                    ],
+                    "settings": {
+                        "foreground": "#836fbb",
+                        "fontStyle": "italic"
+                    }
+                },
+                
+            /* ================================
                 * Animation
-             *=================================*/
-            {
-                "scope":[
-                    "meta.property-value.css"
-                ],
-                "settings": {
-                    "foreground": "#e72887",
-                    "fontStyle": "italic"
-                }
-            },
-          
+            *=================================*/
+                {
+                    "scope":[
+                        "meta.property-value.css"
+                    ],
+                    "settings": {
+                        "foreground": "#e72887",
+                        "fontStyle": "italic"
+                    }
+                },
+            
             /* ================================
                 * Psudo class and Element
-             *=================================*/
-            {
-                "scope":[
-                    "entity.other.attribute-name.pseudo-class.css"
-                ],
-                "settings": {
-                    "foreground": "#db5959",
-                    "fontStyle": "italic",
-                }
-            },
-            {
-                "scope":[
-                    "entity.other.attribute-name.pseudo-element.css"
-                ],
-                "settings": {
-                    "foreground": "#ee3c89",
-                    "fontStyle": "italic",
-                }
-            },
+            *=================================*/
+                {
+                    "scope":[
+                        "entity.other.attribute-name.pseudo-class.css",
+                        "entity.other.attribute-name.pseudo-element.css"
+                    ],
+                    "settings": {
+                        "foreground": "#db5959",
+                        "fontStyle": "italic",
+                    }
+                },
+                
             /* ================================
-                * Punctuation
-             *=================================*/
-             // (:)
-            {
-                "scope":[
-                    "punctuation.separator.key-value.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic",
-                }
-            },
-            // (;) 
-            {
-                "scope":[
-                    "punctuation.terminator.rule.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic",
-                }
-            },
-             /* ================================
-                * Single and double quote value
-             *=================================*/
-            {
-                "scope":[
-                    "string.quoted.single.css"
-                ],
-                "settings": {
-                    "foreground": "#8BE9FD",
-                    "fontStyle": "italic",
-                }
-            },
-            {
-                "scope":[
-                    "string.quoted.double.css"
-                ],
-                "settings": {
-                    "foreground": "#8BE9FD",
-                    "fontStyle": "italic",
-                }
-            },
-             /* ================================
-                * Media query
-             *=================================*/
-            {
-                "scope":[
-                    "support.constant.media.css"
-                ],
-                "settings": {
-                    "fontStyle": "italic",
-                }
-            },
-            {
-                "scope":[
-                    "support.type.property-name.media.css"
-                ],
-                "settings": {
-                    "foreground": "#ee3c89",
-                    "fontStyle": "italic",
-                }
-            },
+                *  Quote value
+            *=================================*/
+                {
+                    "scope":[
+                        "string.quoted.single.css",
+                        "string.quoted.double.css"
+                    ],
+                    "settings": {
+                        "foreground": "#8BE9FD",
+                        "fontStyle": "italic",
+                    }
+                },
+            /* ================================
+                * Media query(proprty name)
+            *=================================*/
+                {
+                    "scope":[
+                        "support.type.property-name.media.css"
+                    ],
+                    "settings": {
+                        "foreground": "#ee3c89",
+                        "fontStyle": "italic",
+                    }
+                },
             
             /*========================================================================================
             *                                       JavaScript
             *=========================================================================================*/
-                /*================================
-                *  Varriable
-                *=================================*/
+            /*==============================================================
+               * Varriable (keyword)
+                * Object
+                * Math (keyword)
+                * new (keyword)
+                * function (keyword)
+                * class brackets 
+                * extends (keyword)
+            *===============================================================*/
                 {
                     "scope":[
-                        "variable.other.readwrite.js"
+                        "variable.other.readwrite.js",
+                        "storage.type.js",
+                        "meta.brace.curly.litobj.js",
+                        "variable.other.object.js",
+                        "support.class.builtin.js",
+                        "constant.language.null.js",
+                        "variable.language.this.js",
+                        "constant.language.boolean.true.js",
+                        "constant.language.boolean.false.js",
+                        "storage.type.function.js",
+                        "punctuation.section.class.begin.js",
+                        "punctuation.section.class.end.js",
+                        "keyword.operator.new.js",
+                        "storage.type.extends.js",
+                        "storage.modifier.js"
+
                     ],
                     "settings": {
-                       //"foreground": "#00E8C6", //d4a349 //52456B //9b66e0
                         "fontStyle": "italic",
                     }
                 },
-                    /* ================================
-                    * Queote values ("Raihan")
-                    *=================================*/
+            /* ================================
+            * Queote values ("Raihan")
+            *=================================*/
                 {
                     "scope":[
-                        "string.quoted.single.js"
-                    ],
-                    "settings": {
-                        "foreground": "#81e975",
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope":[
-                        "string.quoted.double.js"
-                    ],
-                    "settings": {
-                        "foreground": "#81e975",
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope":[
+                        "string.quoted.single.js",
+                        "string.quoted.double.js",
                         "string.quoted.template.js"
                     ],
                     "settings": {
@@ -521,18 +322,10 @@
                         "fontStyle": "italic"
                     }
                 },
-                {
-                    "scope":[
-                        "storage.type.js"
-                    ],
-                    "settings": {
-                       // "foreground": "#ff00b3",
-                        "fontStyle": "italic"
-                    }
-                },
-                    /* ================================
-                    *  return
-                    *=================================*/
+                
+            /* ================================
+            *  return (keyword)
+            *=================================*/
                 {
                     "scope":[
                         "keyword.control.flow.js"
@@ -542,88 +335,26 @@
                         "fontStyle": "italic"
                     }
                 },
-                    /* ================================
-                    *  Logical Operator
-                    *=================================*/
+            /* ==========================================
+            * Logical Operator, 
+            * Arthmetic operator
+            *============================================*/
                 {
                     "scope":[
-                        "keyword.operator.logical.js"
+                        "keyword.operator.logical.js",
+                        "keyword.operator.arithmetic.js"
                     ],
                     "settings": {
                         "fontStyle": "bold"
                     }
                 },
-                    /* ================================
-                    *  relational Operator
-                    *=================================*/
+            /* ================================
+            *  Brackets
+            *=================================*/
                 {
                     "scope":[
-                        "keyword.operator.relational.js"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
-                },
-                {
-                    "scope":[
-                        "keyword.operator.comparison.js"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
-                },
-                {
-                    "scope":[
-                        "keyword.operator.ternary.js"
-                    ],
-                    "settings": {
-                        "fontStyle": ""
-                    }
-                },
-                  
-        /* ================================
-        *  Funtion and function name
-        *=================================*/
-                {
-                    "scope":[
-                        "storage.type.function.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope":[
-                        "entity.name.function.js"
-                    ],
-                    "settings": {
-                        "foreground": "#ee3c89",
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        *  Brackets
-        *=================================*/
-                {
-                    "scope":[
-                        "meta.brace.round.js"
-                    ],
-                    "settings": {
-                        "foreground": "#fd3f49",
-                        "fontStyle": "bold italic"
-                    }
-                },
-                {
-                    "scope":[
-                        "meta.brace.curly.js"
-                    ],
-                    "settings": {
-                        "foreground": "#fd3f49",
-                        "fontStyle": "bold italic"
-                    }
-                },
-                {
-                    "scope":[
+                        "meta.brace.round.js",
+                        "meta.brace.curly.js",
                         "meta.brace.square.js"
                     ],
                     "settings": {
@@ -632,23 +363,13 @@
                     }
                 },
         
-        /* ================================
-        *  Object Property (fname:)
-        *=================================*/
+            /* ==============================================================
+            * Object Property (fname:) ,
+            * Object Property (.length) brackets
+            *==============================================================*/
                 {
                     "scope":[
-                        "string.unquoted.js"
-                    ],
-                    "settings": {
-                        "foreground": "#BD86C1",
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        *  Object Property (.length)
-        *=================================*/
-                {
-                    "scope":[
+                        "string.unquoted.js",
                         "variable.other.property.js"
                     ],
                     "settings": {
@@ -656,192 +377,97 @@
                         "fontStyle": "italic"
                     }
                 },
-        /* ================================
-        *  variable.objectName
-        *=================================*/
+            /* ==========================================================
+                * function name, 
+                * log(), 
+                * parseFloat(), 
+                * splice(),
+                * constractor()
+            *==============================================================*/  
                 {
                     "scope":[
-                        "variable.other.object.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        *  console
-        *=================================*/            
-        {
-            "scope":[
-               "support.type.object.console.js"
-            ],
-            "settings": {
-                "foreground": "#ebb146",
-                "fontStyle": "italic"
-            }
-        },
-        /* ================================
-        *  log()
-        *=================================*/            
-        {
-            "scope":[
-                "support.function.console.js"
-            ],
-            "settings": {
-                "foreground": "#ee3c89",
-                "fontStyle": "italic"
-            }
-        },
-        /* ================================
-        *  Dobule quote and Template sting
-        *=================================*/
-                {
-                    "scope":[
-                        "punctuation.definition.string.begin.js"
-                    ],
-                    "settings": {
-                        "foreground": "#2597da",
-                        "fontStyle": "bold italic"
-                    }
-                },
-                {
-                    "scope":[
-                        "punctuation.definition.string.end.js"
-                    ],
-                    "settings": {
-                        "foreground": "#00fdf0",
-                        "fontStyle": "bold italic"
-                    }
-                },
-                {
-                    "scope":[
-                        "punctuation.definition.quasi.begin.js"
-                    ],
-                    "settings": {
-                        "foreground": "#2597da",
-                        "fontStyle": "bold italic"
-                    }
-                },
-                {
-                    "scope":[
-                        "punctuation.definition.quasi.end.js"
-                    ],
-                    "settings": {
-                        "foreground": "#00fdf0",
-                        "fontStyle": "bold italic"
-                    }
-                },
-        /* ================================
-        *  Arithmetic Operator
-        *=================================*/
-                {
-                    "scope":[
-                        "keyword.operator.arithmetic.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "bold"
-                    }
-                },
-        /* ================================
-        *  Numeric values
-        *=================================*/
-                {
-                    "scope":[
-                        "constant.numeric.js"
-                    ],
-                    "settings": {
-                        "foreground": "#ebb146",
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        *  Document
-        *=================================*/
-                {
-                    "scope":[
-                        "support.type.object.dom.js"
-                    ],
-                    "settings": {
-                        "foreground": "#ebb146",
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        *  parse float
-        *=================================*/
-                {
-                    "scope":[
-                        "support.function.js"
+                        "support.function.console.js",
+                        "support.function.js",
+                        "support.function.mutator.js",
+                        "entity.name.function.js",
+                        "entity.name.function.method.js"
+
                     ],
                     "settings": {
                         "foreground": "#ee3c89",
                         "fontStyle": "italic"
                     }
                 },
-        /* ================================
-        *  Splice
-        *=================================*/
-                {
-                    "scope":[
-                        "support.function.mutator.js"
-                    ],
-                    "settings": {
-                        "foreground": "#ee3c89",
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        * Math
-        *=================================*/
-                {
-                    "scope":[
-                        "support.class.builtin.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        *  null
-        *=================================*/
-                {
-                    "scope":[
-                        "constant.language.null.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        * this
-        *=================================*/
-                {
-                    "scope":[
-                        "variable.language.this.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
-        /* ================================
-        *  true,false
-        *=================================*/
-                {
-                    "scope":[
-                        "constant.language.boolean.true.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
-                {
-                    "scope":[
-                        "constant.language.boolean.false.js"
-                    ],
-                    "settings": {
-                        "fontStyle": "italic"
-                    }
-                },
+        /* =========================================
+            * Single quote 
+            * Dobule quote
+            * Template sting
+        *===========================================*/
+            {
+                "scope":[
+                    "punctuation.definition.string.begin.js",
+                    "punctuation.definition.quasi.begin.js",
+
+                ],
+                "settings": {
+                    "foreground": "#2597da",
+                    "fontStyle": "bold italic"
+                }
+            },
+            {
+                "scope":[
+                    "punctuation.definition.string.end.js",
+                    " punctuation.definition.quasi.end.js"
+                ],
+                "settings": {
+                    "foreground": "#00fdf0",
+                    "fontStyle": "bold italic"
+                }
+            },
+        /* ==================================
+            * Numeric values 
+            * document (keyword)
+            * this (keyword)
+            * console (keyword)
+        *====================================*/
+            {
+                "scope":[
+                    "constant.numeric.js",
+                    "support.type.object.dom.js",
+                    "support.type.object.console.js",
+                    "variable.language.this.js"
+                ],
+                "settings": {
+                    "foreground": "#ebb146",
+                    "fontStyle": "italic"
+                }
+            },
+       
+        /* =====================================
+        *  class (keyword)
+        *=====================================*/
+            {
+                "scope":[
+                    "storage.type.class.js"
+                ],
+                "settings": {
+                    "foreground": "#EE5D43",
+                    "fontStyle": "italic"
+                }
+            },
+         /* =====================================
+        *  Classname
+        *=====================================*/
+            {
+                "scope":[
+                    "entity.name.class.js",
+                    "entity.name.type.instance.js"
+                ],
+                "settings": {
+                    "foreground": "#fbff0f",
+                    "fontStyle": "italic"
+                }
+            },
         ]
-    },
-    "workbench.colorTheme": "Andromeda Italic Bordered",
+   },
 }
